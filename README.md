@@ -19,4 +19,4 @@ Time: 14.00 - 16.00 (or shorter)
 Where: on Teams
 ```
 
-Please, do remember that we do this on a voluntary basis, and simply because we would like to help. So no lectures, sessions or answer is actually guaranteed and is strictly based on our availability. This means that potentially there might be peiods of time when sessions take place once a week, and your answers on the Discussion forum are replied quickly enough. But also periods when no sessions take place, and your questions are not replied to. After all, the master and our own project is still our first priority. 
+<ins>Please, do remember that we do this on a voluntary basis, and simply because we would like to help. So no lectures, sessions or answer is actually guaranteed and is strictly based on our availability. This means that potentially there might be peiods of time when sessions take place once a week, and your answers on the Discussion forum are replied quickly enough. But also periods when no sessions take place, and your questions are not replied to. After all, the master and our own project is still our first priority.</ins>
