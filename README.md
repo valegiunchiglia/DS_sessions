@@ -1,5 +1,7 @@
 # DS sessions
 
+![](.DS-github-welcome.png)
+
 Hey Everybody!
 
 Welcome to the github repository for the sessions organized by the Data Science Helper team!
