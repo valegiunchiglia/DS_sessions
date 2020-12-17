@@ -7,3 +7,4 @@ Date|Type of sessions|Topic
 :---:|:---:|:---:|
 13/01|Introductory Lecture| Introduction to R
 20/01|Clinic Session| -
+27/01|Introductory Lecture| Introduction to Statistics + R implementation
