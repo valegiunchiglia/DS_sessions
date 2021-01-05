@@ -19,7 +19,7 @@ The project consists of three parts:
 Both the clinic sessions and introductory lectures will take place on:
 ```
 When: Wednesdays
-Time: 14.00 - 16.00 (or shorter)
+Time: Might change (check Schedule_sessions.md for more info)
 Where: on Teams
 ```
 
