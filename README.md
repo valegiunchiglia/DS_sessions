@@ -4,7 +4,7 @@
 
 # Updates
 
-The 13/01 the first Introductory Lecture/Coding tutorial will take place on Teams at 12.30-14.00. Check the file Schedule_sessions.rmd for info and links to the session and the Lecture_materials folder for all the material you need to download/have for the lecture. In order to join the coding tutorial, you need to prepare the computer. All info/video tutorial will be uploaed soon. Stay tuned!
+On the 13/01 the first Introductory Lecture/Coding tutorial will take place on Teams at 12.30-14.00. Check the file Schedule_sessions.rmd for info and links to the session and the Lecture_materials folder for all the material you need to download/have for the lecture. In order to join the coding tutorial, you need to prepare the computer. All info/video tutorial will be uploaed soon. Stay tuned!
 
 
 ------------------------------------
