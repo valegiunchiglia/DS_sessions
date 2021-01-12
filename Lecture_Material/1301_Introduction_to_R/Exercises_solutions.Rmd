@@ -1,0 +1,196 @@
+---
+title: "Basic R Exercises"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Short Introduction
+
+This short coding tutorial will introduce you all to the use of Bioconductor, RMarkdown and publicly available data on GEO. The data are gene expression data of both healthy samples and colorecteral tumor samples. Keep the data, since we will probably use them in the next session to conduct some statistical analysis. 
+
+This is a RMarkdown document. As you can see, there are sections where you can simply write, and sections where you can write your code. The coding sections are sorrounded by three backticks. R Markdown is really useful when you want to create a report of your work and results, since you can combine in the same document all your code and comments. If you press "Knit" at the top of the page, the following document will be converted either in a html_document or pdf, depending on what you choose. If you are familiar with Latex, R markdown is really similar. Be careful, if you have errors in the code, you will not be able to produce the document. 
+
+To add a "code" section, you just have to press "insert" at the top of the page. As you can observe, you can choose which programming language to select. We will stick with R for the moment.To run a chunk (or code section) just press the play bottom on the top right of each chunk. 
+
+## Get the data!
+
+To start, I ask you to print which version of R you have installed. If you followed the tutorial online, you probably downloaded the most recent one, but you never know. Different versions of R might require different versions of packages. If you try to install versions of packages that are too recent for your R, then you will get an error!! 
+
+```{r}
+version
+```
+
+Perfect, now that you know which R version you have, let's try to download the data. 
+The data we will use are at this link https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164191. 
+Create an object called "data" with all information about the sample. 
+(Tip: use the getGEO function of the package GEOquery from Bioconductor)
+
+```{r}
+#if (!requireNamespace("BiocManager", quietly = TRUE))
+#  install.packages("BiocManager")
+
+#BiocManager::install("GEOquery")
+library(GEOquery)
+
+data <- getGEO('GSE164191', GSEMatrix = TRUE)
+```
+
+Great! If you downloaded your data correctly, you should have a new object in your environment. Let's print the class, and then check the object out.
+```{r}
+class(data)
+```
+
+## Let's work with the data
+
+It's time to extract the information we need. Let's create two new data frames called "expr" and "metadata" containing respectively information about the gene expression and the metadata of the sample. 
+(Tip: press on the data object in the environment and try to understand where this information might be stored. To extract expression data, you need the function exprs)
+
+```{r}
+expr <- as.data.frame(exprs(data[[1]]))
+metadata = data[["GSE164191_series_matrix.txt.gz"]]@phenoData@data
+```
+
+The metadata contains a lot of information, but actually we just want to keep the column that says whether the sample is tumor or normal. Create a dataframe called "labels" with this column only (try to use both the index and the name). Keep the rownames!
+
+```{r}
+labels = list(metadata$title)
+labels = list(metadata[,1])
+labels = data.frame("labels" = metadata[,1], row.names = rownames(metadata))
+```
+
+Perfect, let's now create a new dataframe containing both the labels and the expression data. Each row should be a sample, and each column a gene. Since the df will be quite big, let's keep only the first 200 columns. 
+
+```{r}
+final_df = data.frame(new_df, t(data_expr), row.names = rownames(new_df))
+smaller_df = final_df[, 1:200]
+```
+
+If you want to have a quick overview over the data, a really easy to use and nice function is summary. Check it out!
+```{r}
+sum = summary(smaller_df)
+```
+
+
+Now it gets a bit more complicated. Create a new column in the final df that has as value 0, if the sample is healthy, and 1, if the sample is tumor. 
+
+In order for you to be able to do this in a easy and straightforward way, we will replace the name of the labels with two standard: "Peripheral Blood_Healthy control" for healthy and "Peripheral Blood_Colorectal cancer" for tumor. The code is already provided since we didn't go through regex yet. But if you have questions or are curious, please ask!
+
+```{r}
+simpler_labels = stringr::str_replace_all(smaller_df$labels, "[[:graph:]]+: ", "")
+smaller_df$labels = simpler_labels
+```
+
+(Tip: you need both a for and if loop)
+
+```{r}
+for(i in 1:nrow(smaller_df)) {
+  if (smaller_df[i,1] == "Peripheral Blood_Healthy control") {
+    smaller_df$num_labels[i] = 0
+  } else if(smaller_df[i,1] == "Peripheral Blood_Colorectal cancer") {
+    smaller_df$num_labels[i] = 1
+  }
+}
+```
+Check if your for loop worked by comparing the number of tumor samples and the number of 1.
+(Tip: use the function sum)
+
+```{r}
+sum(smaller_df$labels == "Peripheral Blood_Colorectal cancer") == sum(smaller_df$num_labels)
+```
+
+Let's now convert it into a function. Learning how to define functions it's extremely useful in the long run, mainly when you will start to replace for loops with the function apply (which is much faster). 
+
+```{r}
+convert = function(df, col, normal, tumor) {
+  df2 = df
+  if (df2[i,col] == normal) {
+    df2$num_labels[i] = 0
+  } else if(df2[i,col] == tumor) {
+    df2$num_labels[i] = 1
+  }
+  return(df2)
+}
+
+df2 = convert(smaller_df, 1, normal = "Peripheral Blood_Healthy control", tumor = "Peripheral Blood_Colorectal cancer" )
+```
+
+Why is it important to convert it to 0 and 1? When you do machine learning, most of the algorithm cannot really work with characters. That's why it's important to convert it to numerical. If you are interested, we can have a lecture on basic machine learning in R, where we look at some regression models.
+
+## Let's create some plots!
+
+Let's try to visualise our data.First of all, let's plot an histogram and a barplot with the number of samples that are tumor vs normal. 
+(Tip: to plot an histogram you need numerical variables, to plot a barplot you need a vector)
+
+```{r pressure, echo=FALSE}
+hist(smaller_df$num_labels, breaks = 2, main = "Sample types", ylab = "Frequency", col = c("red", "yellow"))
+barplot(table(smaller_df$labels), main = "Sample types", ylab = "Frequency", col = c("red", "yellow"))
+```
+
+Now let's check the expression distribution of one gene using an hisotgram. 
+After you get the plot, try to add the title "Gene expression distribution", color in red and define the axis as you find more approprite. Try to plot the gene expression distribution of two genes next to each other. 
+(Tip: use the function par to plot multiple images next to each other. Be careful: once you use par you set the new settings as default for all the plots in the R session)
+
+```{r}
+#to set the title of the plot, use main. To define x and y axys use xlab and ylab. To change the color use col. To specify the number of bins of the histogram use breaks. 
+hist(smaller_df$X1007_s_at, freq = F, main = "Distribution", xlab = "Expression", ylab = "Density", col = "red", breaks = 150)
+
+par(mfrow=c(1,2))
+hist(smaller_df$X1007_s_at, freq = F, main = "Distribution - Gene1", xlab = "Expression", ylab = "Density",)
+hist(smaller_df$X1053_at, freq = F, main = "Distribution - Gene2", xlab = "Expression", ylab = "Density",)
+```
+
+You should observe a distribution similar to the normal distribution. If you want to compare it with a normal distribution, you can try to add a line on top of your plot that represents the normal distribution given the mean and standard deviation
+(Tip: calculate the mean and sd of the gene expression, then use the functions curve and dnorm combined)
+
+```{r}
+hist(smaller_df$X1007_s_at, freq = F, main = "Distribution", xlab = "Expression", ylab = "Density",)
+m<-mean(smaller_df$X1007_s_at)
+std<-sqrt(var(smaller_df$X1007_s_at))
+#To choose the type of line to use (such as dashed in the example) set lty. To change the thickness of the line use lwd. 
+curve(dnorm(x, mean=m, sd=std), col="darkblue", lwd=2, lty = 2, add=TRUE)
+```
+
+This is interesting, but it doesn't show the difference in the distribution between healthy and tumor. Try to recreate a distribution plot but this time use the density function. Plot a red line for the distribution of the gene for healthy and a blue line for the distribution of the gene for tumor. 
+(Tip: you need to create two vectors - one for healthy and one for tumor. To plot on an already existing figure, check the function lines)
+
+
+```{r}
+healthy = as.vector(smaller_df[smaller_df$labels == "Peripheral Blood_Healthy control", "X1007_s_at"])
+tumor = as.vector(smaller_df[smaller_df$labels == "Peripheral Blood_Colorectal cancer", "X1007_s_at"])
+plot(density(healthy), col = "red")
+lines(density(tumor), col = "blue")
+
+#if you want to add a legend you have to first define the location of the legend in the plot, then define the names to put in the legen, the color of the lines per each name, and then which type of lines they are associated to. In this case we use 1:1 because both lines are solid lined. If they were dashed lines, we would use 2. 
+
+legend(200,0.002, legend = c("healthy", "tumor"), col = c("red", "blue"), lty=1:1)
+
+```
+
+If you want to practice even more, I suggest you to try to recreate the plots using ggplot2. It's a bit harder at first, but you will end up loving it! Here's how to do the same plots in ggplot.
+
+```{r}
+library(ggplot2)
+
+ggplot(smaller_df, aes(x = X1007_s_at, color = labels)) + 
+  geom_density() + 
+  labs(title = "Distribution density for healthy and cancer samples",
+       color = "",
+       x = "Expression of the X1007_s_at gene",
+       y = "Density")
+
+```
+
+```{r}
+ggplot(smaller_df, aes(x = X1007_s_at, fill = labels)) + 
+  geom_histogram(alpha=.75) + 
+  scale_fill_discrete(name="Sample type", labels=c("cancer", "healthy")) + 
+  labs(title = "Histogram for healthy and cancer samples",
+       x = "Expression of the X1007_s_at gene",
+       y = "Density")
+```
+
+This is it for today. If you have any question, or you want to deepen any of the topics presented, please get in touch through the Discussions forum in Github.
+In the next coding tutorial we will try to do some statistical analysis on our data, and apply more advance visualization methods. We hope you enjoyed the session, and we hope to see you again in the next one!
