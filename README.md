@@ -10,6 +10,22 @@ You can find the lecture material and exercises in the folder Lecture_material. 
 On the 20/01 there will be the first clinic session! We will share the form to fill in to book a slot with a DS student here soon. 
 Stay tuned! 
 
+## Having issues downloading the Lecture materials?
+
+Downloading stuff from github can be a bit confusing at first. The easiest way to do it is by copying and pasting the text directly in your RStudio.
+
+Example: Exercises file (`Exercises.Rmd`)
+
+- Navigate this GitHub repository until you reach `DS_sessions/Lecture_Material/1301_Introduction_to_R/Exercises.Rmd`, or [click here](https://github.com/valegiunchiglia/DS_sessions/blob/main/Lecture_Material/1301_Introduction_to_R/Exercises.Rmd)
+- Once you see the code window, select everything in the window and copy it
+- Open RStudio and go to File > New File > R Markdown... give it a title and click `OK`
+- A new file will appear in your Scripts panel (top left) with a bunch of text and code
+- Delete the text from the default template code and paste the code you copied from our website instead
+
+
+That's it! `Exercised.Rmd` will guide you through this new format: R Markdown, which combines text and code in a single document.
+
+
 ------------------------------------
 
 Hey Everybody!
