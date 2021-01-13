@@ -10,6 +10,8 @@ Check the file Schedule_sessions.md for info and links to the session and the Le
 
 In the Lecture_materials folder you will find a link to a **video tutorial on how to install R/RStudio, R Exercises that you will need for the lecture (the solutions are also available, but don't check them out yet), and a R script with all the material you will go through during the lecture.**
 
+> [Link to the session](https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NTM1YjQyMDAtODU3NS00ODk1LThmYWUtMjA2ZGYwZDU2ZDlj%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%25222b897507-ee8c-4575-830b-4f8267c3d307%2522%252c%2522Oid%2522%253a%252259f6bab9-038b-4d99-ba0a-7617d7a16f65%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=7466d79a-c0e1-4005-9a71-cb0b56640f9e&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true)
+
 
 ------------------------------------
 
