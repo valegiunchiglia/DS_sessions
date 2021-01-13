@@ -4,14 +4,11 @@
 
 # Updates
 
-On the 13/01 the first **Introductory Lecture/Coding tutorial about R** will take place on **Teams at 12.30-14.00**. 
+Thanks for coming to the **Introductory Lecture/Coding tutorial about R**! We hope it was useful. 
+You can find the lecture material and exercises in the folder Lecture_material. If you want to learn R, please try the exercises. If you have questions you can write them in the Discussions section in Github, and we will reply!
 
-Check the file Schedule_sessions.md for info and links to the session and the Lecture_materials folder for all the material you need to download/have for the lecture. In order to join the coding tutorial, you need to set up your laptop! So check it out in advance. 
-
-In the Lecture_materials folder you will find a link to a **video tutorial on how to install R/RStudio, R Exercises that you will need for the lecture (the solutions are also available, but don't check them out yet), and a R script with all the material you will go through during the lecture.**
-
-> [Link to the session](https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NTM1YjQyMDAtODU3NS00ODk1LThmYWUtMjA2ZGYwZDU2ZDlj%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%25222b897507-ee8c-4575-830b-4f8267c3d307%2522%252c%2522Oid%2522%253a%252259f6bab9-038b-4d99-ba0a-7617d7a16f65%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=7466d79a-c0e1-4005-9a71-cb0b56640f9e&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true)
-
+On the 20/01 there will be the first clinic session! We will share the form to fill in to book a slot with a DS student here soon. 
+Stay tuned! 
 
 ------------------------------------
 
