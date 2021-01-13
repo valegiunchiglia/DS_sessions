@@ -16,6 +16,7 @@ That's it for now. If you have any questions, don't hesitate to post it in the D
 3. Control structures (if, for loop, while)
 4. Functions and Vectorization
 5. Visualization 
+6. BONUS: Tidyverse (ggplot, dplyr, tidyr)
 
 ```
 
