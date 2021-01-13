@@ -7,8 +7,10 @@
 Thanks for coming to the **Introductory Lecture/Coding tutorial about R**! We hope it was useful. 
 You can find the lecture material and exercises in the folder Lecture_material. If you want to learn R, please try the exercises. If you have questions you can write them in the Discussions section in Github, and we will reply!
 
-On the 20/01 there will be the first clinic session! We will share the form to fill in to book a slot with a DS student here soon. 
-Stay tuned! 
+On the 20/01 there will be the first clinic session! 
+Do you have any question related to Data Science? 
+Fill in this [form](https://forms.gle/VaZb9oivXJ2bP4t47) and book a 20/30 minutes slot with a student from the DS helper team
+
 
 ## Having issues downloading the Lecture materials?
 
