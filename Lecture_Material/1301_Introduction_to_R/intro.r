@@ -207,6 +207,14 @@ df1$numbers
 df1$numbers == df1[, "numbers"]
 identical(df1$numbers, df1[, "numbers"])
 
+## Bonus: Importing data from Excel as .csv
+# One of the starting points of every R project is to import the data into R. Most of the 
+# datasets that can be found in the internet are in the form of comma-separated values (csv)
+# R can read those files into a data.frame with the following function:
+csvdata = read.csv("/full/path/to/your/file.csv", sep = ",", stringsAsFactors = FALSE)
+class(csvdata)
+head(csvdata)
+
 ### 2.3 List -----
 # Last but not least, here comes the list! This is the most flexible data type.
 # Each element of a list can have a different class and a different size. Create
