@@ -4,12 +4,15 @@
 
 # Updates
 
+On the 20/01 there will be the first clinic sessions. 
+
+Here the info:
+- 15.30 - 16.00: Zoe [Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YmI3MzA4ZGEtZTIzMS00YWZkLWJmNDctNmU4ZjViOTg3MzYw%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d)
+- 15.30 - 16.00: Kaoutar [Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWFkOWYxOWYtODQ5Zi00NjhmLWIxNGQtYTNmZGJjYWE1OWI1%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d)
+
 Thanks for coming to the **Introductory Lecture/Coding tutorial about R**! We hope it was useful. 
 You can find the lecture material and exercises in the folder Lecture_material. If you want to learn R, please try the exercises. If you have questions you can write them in the Discussions section in Github, and we will reply!
 
-On the 20/01 there will be the first clinic session! 
-Do you have any question related to Data Science? 
-Fill in this [form](https://forms.gle/VaZb9oivXJ2bP4t47) and book a 20/30 minutes slot with a student from the DS helper team
 
 
 ## Having issues downloading the Lecture materials?
@@ -41,7 +44,7 @@ The project consists of three parts:
 * **Discussion Forum:** at the top of this page you can find a Discussions tab. There you can post ALL the questions you have. This is thought for the questions that require a more urgent reply (and can't wait for the following clinic session), or that don't necessariliy need a face to face meeting. Just post your question there by opening a new discussion, and the students of the DS helper team will try to help. For further information, read the "Welcome to DS_sessions" in the Discussion section.
 
 **For some introductory lectures, it will be reccomended to download some packages/softwares. If you might have any issue setting up your laptop, please post a question in the Discussion forum and we will get back to you.**
-
+ 
 ## Practical information:
 
 Both the clinic sessions and introductory lectures will take place on:
