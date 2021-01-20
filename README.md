@@ -4,12 +4,6 @@
 
 # Updates
 
-On the 20/01 there will be the first clinic sessions. 
-
-Here the info:
-- 15.30 - 16.00: Zoe [Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YmI3MzA4ZGEtZTIzMS00YWZkLWJmNDctNmU4ZjViOTg3MzYw%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d)
-- 15.30 - 16.00: Kaoutar [Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWFkOWYxOWYtODQ5Zi00NjhmLWIxNGQtYTNmZGJjYWE1OWI1%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d)
-
 Thanks for coming to the **Introductory Lecture/Coding tutorial about R**! We hope it was useful. 
 You can find the lecture material and exercises in the folder Lecture_material. If you want to learn R, please try the exercises. If you have questions you can write them in the Discussions section in Github, and we will reply!
 
