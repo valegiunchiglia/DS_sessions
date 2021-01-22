@@ -4,6 +4,9 @@
 
 # Updates
 
+Hi Everyone!! On Wedsneday the 27/01 there will be the next lecture. The topic will be an introduction to Statistics and the implementational of different statistical methods (such as hypothesis testing, regression analysis, correlation...) in R. The Lecture material will be uploaded soon. At the beginning of the lecture we will answer all the questions you might have about the first lecture (Introduction to R). Hope to see many of you there!
+
+
 Thanks for coming to the **Introductory Lecture/Coding tutorial about R**! We hope it was useful. 
 You can find the lecture material and exercises in the folder Lecture_material. If you want to learn R, please try the exercises. If you have questions you can write them in the Discussions section in Github, and we will reply!
 
