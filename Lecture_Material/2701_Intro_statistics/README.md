@@ -1,6 +1,6 @@
 # Introduction to Statistics (and implementation in R)
 
-Hey Evereryone! The topic of this lecture will be quite broad. It will be all based on the statistical analysis of some publicly available gene expression data. While analysing these data, we will go through the most relevant statistical methods. In this way, you get to do some bioinFormatics while learning/reviewing statistics and R. We will also go through the different visualization methods that we didn't make it to address in the previous lecture due to the lack of time. 
+Hey Everyone! The topic of this lecture will be quite broad. It will be all based on the statistical analysis of some publicly available gene expression data. While analysing these data, we will go through the most relevant statistical methods. In this way, you get to do some bioinFormatics while learning/reviewing statistics and R. We will also go through the different visualization methods that we didn't make it to address in the previous lecture due to the lack of time. 
 
 ## Outline
 
