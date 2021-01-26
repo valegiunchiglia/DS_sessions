@@ -16,7 +16,7 @@ Hey Everyone! The topic of this lecture will be quite broad. It will be all base
 3. Differential Gene Expression Analysis:
     - t-test
     - Multiple comparison correction
-    - Fold change and vulcano plot
+    - Fold change and volcano plot
     
 
 ## References
