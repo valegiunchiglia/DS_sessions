@@ -4,7 +4,7 @@
 
 # Updates
 
-Hi Everyone!! On Wedsneday the 27/01 there will be the next lecture. The topic will be the implementation of different statistical methods in R, together with some basic bioinfgormatics (gene expression analysis) and machine learning (logistic regression). More detail on the topics addressed can be found in the Lecture_material.At the beginning of the lecture we will answer all the questions you might have about the first lecture (Introduction to R). Hope to see many of you there!
+Hi Everyone!! On Wednesday the 27/01 there will be the next lecture. The topic will be the implementation of different statistical methods in R, together with some basic bioinfgormatics (gene expression analysis) and machine learning (logistic regression). More detail on the topics addressed can be found in the Lecture_material.At the beginning of the lecture we will answer all the questions you might have about the first lecture (Introduction to R). Hope to see many of you there!
 
 27/01, 13.00 - 15.00
 
