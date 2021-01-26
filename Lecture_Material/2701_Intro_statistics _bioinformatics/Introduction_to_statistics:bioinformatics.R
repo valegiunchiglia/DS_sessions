@@ -218,7 +218,7 @@ for(i in 1 : ncol(expr_final)) {
   pvalue[i] = t$p.value
 }
 
-# IMPORTANT: there are tests that are used with variables that are normally 
+# IMPORTANT: there are tests that are used with variables that are not normally 
 # distributed, such as the Wilcoxon, Kruskal Wallis and permutation test. 
 # I have used them mainly when handling batch effect. 
 # Batch effect is defined as statistical artifacts that can mislead the analysis. 
@@ -286,6 +286,9 @@ final_genes = final_genes[order(final_genes$adjusted_p), ]
 # The correlation in statistics measures how related are two variables, more in detail
 # how their value changes in correspondence to one another. 
 corr = cor(expr_final[, 1:20]) #take a sample or too many genes
+                   
+#We are using the default correlation method, which is Pearson. However, there is Spearman correlation
+# that is usually better suited when you have a lot of outliers
 diag(corr) = NA
 pheatmap::pheatmap(corr)
 
@@ -306,8 +309,8 @@ pheatmap::pheatmap(corr)
 # and multiple independent variable. The easiest regression analysis is linear regression
 # that tries to build a linear relationship between the dependent and independent 
 # variable. However, in this case, with gene expression data, it doesn't make much sense
-# to build a linear regression analysis. It is more appropriate to build a logistic 
-# regression analysis. Logistic regression is a statistical techinique used to evaluate
+# to complete a linear regression regression. It is more appropriate to build a logistic 
+# regression model. Logistic regression is a statistical techinique used to evaluate
 # whether a binary variable (so a variable that can be either 0 or 1) can be predicted 
 #using a set of continuous variables. In this case, we can try to evaluate whether the  
 # expression of the ten genes that are the most significant can predict whether the sample 
@@ -345,6 +348,7 @@ logit <- glm(metadata.disease_status ~ X209635_at +
                  X1557067_s_at + X222018_at + X202479_s_at + X200882_s_at, data = train, 
                family = "binomial")
 
+#let's check how the model looks
 summary(logit)
 
 # Let's test the results of the model on our train data and see how it performs.
@@ -360,7 +364,7 @@ for(i in 1:nrow(test)) {
 }
 
 #Try to calculate the precision and recall at home, and to make the precision and
-# recall plot
+#recall plot
 
 # REFERENCES
 # Data: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164191
