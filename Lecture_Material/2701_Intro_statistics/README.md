@@ -12,7 +12,7 @@ Hey Everyone! The topic of this lecture will be quite broad. It will be all base
 2. Inferential Statistics:
     - Hypothesis Testing 
     - Correlation analysis (visualization with heatmaps)
-    - Basic Regression Analysis
+    - Basic machine learning: logistic regression Analysis
 3. Differential Gene Expression Analysis:
     - t-test
     - Multiple comparison correction
