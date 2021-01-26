@@ -14,6 +14,10 @@ Hi Everyone!! On Wedsneday the 27/01 there will be the next lecture. The topic w
 [Lecture Material](https://github.com/valegiunchiglia/DS_sessions/tree/main/Lecture_Material/2701_Intro_statistics%20_bioinformatics)
 (If you want to have the lecture material as a script, just copy and paste it in a new R script)
 
+## Update on Clinic Sessions
+
+Do you have a question that requires a longer explanation? 
+Fill in this [form](https://forms.gle/VaZb9oivXJ2bP4t47), select the days you could be available, and we will try to set up a 30 minutes call with one of the students of the DS helper team. 
 
 ## Having issues downloading the Lecture materials?
 
