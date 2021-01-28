@@ -2,19 +2,7 @@
 
 ![](.DS-github-welcome.png)
 
-# Updates
-
-Hi Everyone! On Wednesday the 27/01 there will be the next lecture. The topic will be the implementation of different statistical methods in R, together with some basic bioinformatics (gene expression analysis) and machine learning (logistic regression). More detail on the topics addressed can be found in the Lecture_material.At the beginning of the lecture we will answer all the questions you might have about the first lecture (Introduction to R). Hope to see many of you there!!
-
-27/01, 13.00 - 15.00
-
-[Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTZjOGM1ODctMjYxZi00ZDA2LTk5YjEtOTI3MjdiM2E0YTYx%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d) 
-
-
-[Lecture Material](https://github.com/valegiunchiglia/DS_sessions/tree/main/Lecture_Material/2701_Intro_statistics%20_bioinformatics)
-(If you want to have the lecture material as a script, just copy and paste it in a new R script)
-
-## Update on Clinic Sessions
+# Update on Clinic Sessions
 
 Do you have a question that requires a longer explanation? 
 Fill in this [form](https://forms.gle/VaZb9oivXJ2bP4t47), select the days you could be available, and we will try to set up a 30 minutes call with one of the students of the DS helper team. 
