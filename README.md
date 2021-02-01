@@ -2,6 +2,12 @@
 
 ![](.DS-github-welcome.png)
 
+# Update on Lectures
+
+The next lectures scheduled are:
+1. 10/02 Introduction to Python 
+2. 17/02 Clustering and Dimensionality Reduction in R
+
 # Update on Clinic Sessions
 
 Do you have a question that requires a longer explanation? 
