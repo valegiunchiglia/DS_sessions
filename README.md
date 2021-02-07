@@ -5,7 +5,7 @@
 # Update on Lectures
 
 The next lectures scheduled are:
-1. 10/02 Introduction to Python 
+1. 10/02, from 15.00 to 17.00,  Introduction to Python, Link to Teams meeting [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDE5NDE2ZGUtM2VkOS00YWQyLTllNzMtY2FhZjJiZDFlN2Vh%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d)
 2. 17/02 Clustering and Dimensionality Reduction in R
 
 # Update on Clinic Sessions
