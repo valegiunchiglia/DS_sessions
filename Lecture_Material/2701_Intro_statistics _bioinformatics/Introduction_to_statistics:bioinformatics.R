@@ -11,6 +11,8 @@
 
 #install packages you need
 install.packages("arsenal")
+
+
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 BiocManager::install("GEOquery")
@@ -56,8 +58,9 @@ barplot(table(metadata$gender), ylim = c(0, 80), main = "Gender", ylab = "Freque
 barplot(table(metadata$disease_status), main = "Disease type", ylab = "Frequency", 
         xlab = "Condition", col = c("green", "pink"))
 
+metadata$age = as.numeric(metadata$age)
 # ---- Histogram ----
-hist(as.numeric(metadata$age), main = "Age distribution", ylab = "Frequency", 
+hist(metadata$age, main = "Age distribution", ylab = "Frequency", 
      xlab = "Age", col = c("red", "yellow", "blue", "green", "pink"))
 
 # ----- Numerical variables ------
@@ -168,7 +171,7 @@ lines(density(expr_final$X1007_s_at[expr_final$condition == "colorectal cancer"]
 
 # We said before that the gene expression data are normally distributed, let's 
 #check it again by plotting the normal distribution line
-m<-mean(expr_final$X1007_s_at)
+m <-mean(expr_final$X1007_s_at)
 std<-sqrt(var(expr_final$X1007_s_at))
 #To choose the type of line to use (such as dashed in the example) set lty. To change the thickness of the line use lwd. 
 curve(dnorm(x, mean=m, sd=std), col="green", lwd=2, lty = 2, add=TRUE)
@@ -253,6 +256,15 @@ sum(adjusted_p <= 0.05)
 # whether the data are biologically significant. To do this, the fold change is 
 # often used, which is a measure of the change in mean expression value of the same
 # gene in healthy vs tumor samples. 
+mean_healthy = apply(healthy, 2, mean)
+
+fun_mean_num <- function(x) {
+  mean(as.numeric(x))
+  
+}
+
+mean_healthy = apply(healthy, 2, fun_mean_num)
+
 mean_healthy = apply(healthy, 2, function(x) mean(as.numeric(x), na.rm = TRUE))
 mean_tumor = apply(tumor, 2, function(x) mean(as.numeric(x), na.rm = TRUE))
 
@@ -290,7 +302,9 @@ corr = cor(expr_final[, 1:20]) #take a sample or too many genes
 #We are using the default correlation method, which is Pearson. However, there is Spearman correlation
 # that is usually better suited when you have a lot of outliers
 diag(corr) = NA
-pheatmap::pheatmap(corr)
+library(pheatmap)
+pheatmap(corr)
+heatmap(corr)
 
 #If the color of the heatmap is red or blue it means that there is some kind 
 #of correlation between the data. The red areas mean that there is a positive 
@@ -303,6 +317,7 @@ pheatmap::pheatmap(corr)
 #Hierarchical clustering is a clustering method that tries to group together the genes
 #based on a distance matrix. This means that the more similar the genes are, the more 
 #likely they are grouped within the same cluster. 
+
 
 # ------- Regression Analysis -------------
 # Regression Analysis is used to estimate a relationship between a dependent variable 
@@ -330,6 +345,7 @@ for(i in 1:nrow(log_df)) {
   }
 }
 
+#IMPORTANT!!! 
 log_df$metadata.disease_status = as.factor(log_df$metadata.disease_status)
 
 # Now we have the dataset ready. However logistic regression is a type of machine 
