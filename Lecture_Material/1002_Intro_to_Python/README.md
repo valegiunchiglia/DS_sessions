@@ -1,6 +1,6 @@
 # Introduction to Python 
 
-Welcome to the introduction to Python! 
+Welcome to the introduction to Python! This session will be really interactive, in this way you can get to program a little bit already. Just access this [link](https://colab.research.google.com/drive/1y-DCg9TbhRUz-uWTP6Es9hgeYIEtESPe?usp=sharing) and you will have access to the material! 
 
 # Outline
 
