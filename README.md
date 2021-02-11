@@ -14,6 +14,10 @@ Fill in this [form](https://forms.gle/VaZb9oivXJ2bP4t47), select the days you co
 
 ## Having issues downloading the Lecture materials?
 
+There are two options for you to download the material:
+
+---OPTION 1---
+
 Downloading stuff from github can be a bit confusing at first. The easiest way to do it is by copying and pasting the text directly in your RStudio.
 
 Example: Exercises file (`Exercises.Rmd`)
@@ -27,6 +31,17 @@ Example: Exercises file (`Exercises.Rmd`)
 
 That's it! `Exercised.Rmd` will guide you through this new format: R Markdown, which combines text and code in a single document.
 
+---OPTION 2---
+1. Open the **terminal** on your laptop
+2. Move to your Desktop directory by using cd (probably it's enough to write **cd Desktop**)
+3. Write git clone https://github.com/valegiunchiglia/DS_sessions.git
+
+Now you should have a folder in your desktop with all the material. You have to do it only once. In order to than update it with the new files in the github, you have to do the following.
+
+1. Open the **terminal**
+2. Move into the DS_sessions folder 
+3. Write git pull origin main
+4. Give your github account name and password. 
 
 ------------------------------------
 
