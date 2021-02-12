@@ -4,7 +4,10 @@
 
 # Update on Lectures
 
-Tomorrow the 10/02 from 15 to 17 the next lecture will take place! The topic is **introduction to python**. The Link to Teams meeting can be found [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDE5NDE2ZGUtM2VkOS00YWQyLTllNzMtY2FhZjJiZDFlN2Vh%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d) and the material you need can be found at this [link](https://colab.research.google.com/drive/1y-DCg9TbhRUz-uWTP6Es9hgeYIEtESPe?usp=sharing). We hope to see many of you there! This lecture will be really interactive and go through the basics of python. 
+Thanks for coming to the lecture "Introduction to Python". If you didn't make it, the link to the recording is in Schedule_sessions.rmd. You will need to log in with your imperial account to access the videos. 
+
+The next lecture will be about clustering (such as kmeans and hierarchical clustering) and dimensionaity reduction (such as PCA, and tSNE) in R!
+Save the date: 17/02
 
 
 # Update on Clinic Sessions
