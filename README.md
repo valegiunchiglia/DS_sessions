@@ -12,7 +12,7 @@ The next lecture will be about clustering (such as kmeans) and dimensionaity red
 
 [Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWIyODY1ODUtY2ZhNi00MjNkLWE5OWItYzAyZTc2ZWNhNDk2%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d)
 
-[Lecture Material](https://github.com/valegiunchiglia/DS_sessions/tree/main/Lecture_Material/17:02_Into_clustering_dim_reduction)
+[Lecture Material](https://github.com/valegiunchiglia/DS_sessions/tree/main/Lecture_Material/1702_Into_clustering_dim_reduction)
 
 
 # Update on Clinic Sessions
