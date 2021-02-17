@@ -18,9 +18,9 @@ data = getGEO("GSE159929")
 metadata = data[["GSE159929_series_matrix.txt.gz"]]@phenoData@data
 
 #get the data
-bladder <- read.csv("/Users/valentinagiunchiglia/Downloads/GSE159929_RAW/GSM4850577_Bladder_Counts.csv.gz")
-heart <-  read.csv("/Users/valentinagiunchiglia/Downloads/GSE159929_RAW/GSM4850581_Heart_Counts.csv.gz")
-skin <-  read.csv("/Users/valentinagiunchiglia/Downloads/GSE159929_RAW/GSM4850587_Skin_Counts.csv.gz")
+bladder <- read.csv("/GSE159929_RAW/GSM4850577_Bladder_Counts.csv.gz")
+heart <-  read.csv("/GSE159929_RAW/GSM4850581_Heart_Counts.csv.gz")
+skin <-  read.csv("/GSE159929_RAW/GSM4850587_Skin_Counts.csv.gz")
 lymph_node <-  read.csv("/Users/valentinagiunchiglia/Downloads/GSE159929_RAW/GSM4850583_Lymph.node_Counts.csv.gz")
 
 # This time I decided to use single cell RNA seq data because I wanted to show you 
