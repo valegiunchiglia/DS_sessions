@@ -4,16 +4,9 @@
 
 # Update on Lectures
 
-Thanks for coming to the lecture "Introduction to Python". If you didn't make it, the link to the recording is in Schedule_sessions.rmd. You will need to log in with your imperial account to access the videos. 
+Thanks for coming to the lecture "Clustering and Dimensionality reductionm in R". If you missed it, you can find the material [here](https://github.com/valegiunchiglia/DS_sessions/tree/main/Lecture_Material/1702_Into_clustering_dim_reduction), and the link to the recordings in the "schedule_sessions.rmd" file. 
 
-The next lecture will be about clustering (such as kmeans) and dimensionaity reduction (such as PCA, and tSNE) in R!
-
-17/02 from 14.00 to 15.30 
-
-[Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWIyODY1ODUtY2ZhNi00MjNkLWE5OWItYzAyZTc2ZWNhNDk2%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d)
-
-[Lecture Material](https://github.com/valegiunchiglia/DS_sessions/tree/main/Lecture_Material/1702_Into_clustering_dim_reduction)
-
+The next lecture will be in a couple of weeks. However, the clinic sessions are still taking place. Just book a spot using this [form](https://forms.gle/VaZb9oivXJ2bP4t47) and we will do our best to help you :) 
 
 # Update on Clinic Sessions
 
