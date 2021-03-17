@@ -3,8 +3,8 @@
 ![](.DS-github-welcome.png)
 
 # Update on Lectures
-
-Thanks for coming to the lecture "Clustering and Dimensionality reductionm in R". If you missed it, you can find the material [here](https://github.com/valegiunchiglia/DS_sessions/tree/main/Lecture_Material/1702_Into_clustering_dim_reduction), and the link to the recordings in the "schedule_sessions.rmd" file. 
+Hi Everyone!! next week the lectures of the DS helper team will start again. 
+We have already two Python lectures and one in GSEA in R scheduled! Check the page again for more information.
 
 The next lecture will be in a couple of weeks. However, the clinic sessions are still taking place. Just book a spot using this [form](https://forms.gle/VaZb9oivXJ2bP4t47) and we will do our best to help you :) 
 
