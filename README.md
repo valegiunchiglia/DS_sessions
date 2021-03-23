@@ -3,10 +3,15 @@
 ![](.DS-github-welcome.png)
 
 # Update on Lectures
-Hi Everyone!! next week the lectures of the DS helper team will start again. 
-We have already two Python lectures and one in GSEA in R scheduled! Check the page again for more information.
+Hi Everyone!! 
 
-The next lecture will be in a couple of weeks. However, the clinic sessions are still taking place. Just book a spot using this [form](https://forms.gle/VaZb9oivXJ2bP4t47) and we will do our best to help you :) 
+Tomorrow there will be the next lecture of the DS Helper team about Python. If you missed the first one, don't worry! We will revise some of the topics. 
+The material for the lecture is accessible at this [link](https://colab.research.google.com/drive/1vad1fRlSXdlqy1zMT-F5947rSEuJv-96?usp=sharing). 
+
+The link to the Teams call is available [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YWE3NmRmYjktNTBjZi00YzYyLWE4NDMtYWUwODBkNWE0MDZm%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d). 
+The lecture will be from 13.00 to 14.30. We hope to see many of you there!!!
+
+The clinic sessions are still taking place. Just book a spot using this [form](https://forms.gle/VaZb9oivXJ2bP4t47) and we will do our best to help you :) 
 
 # Update on Clinic Sessions
 
