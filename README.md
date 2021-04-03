@@ -1,7 +1,9 @@
 # DS sessions
 
 ![](.DS-github-welcome.png)
+# Important
 
+Please, take a minute to fill in this [form](https://forms.gle/unt2MsBZr9SP2oTu9) and evaluate the DS helper team. This is the only way I can improve it!!
 # Update on Lectures
 Hi Everyone!! 
 
