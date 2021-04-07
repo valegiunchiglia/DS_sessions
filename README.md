@@ -8,7 +8,7 @@ Please, take a minute to fill in this [form](https://forms.gle/unt2MsBZr9SP2oTu9
 Hi Everyone!! 
 
 The next lecture will be next Wednesday 14/04. It will be the second part of the introduction to R. 
-We will update the material soon!
+We will upload the material soon!
 
 
 The clinic sessions are still taking place. Just book a spot using this [form](https://forms.gle/VaZb9oivXJ2bP4t47) and we will do our best to help you :) 
