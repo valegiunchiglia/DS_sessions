@@ -4,6 +4,8 @@
 # Important
 
 Please, take a minute to fill in this [form](https://forms.gle/unt2MsBZr9SP2oTu9) and evaluate the DS helper team. This is the only way I can improve it!!
+
+If you cannot access the lecture recordings, just send me an email!
 # Update on Lectures
 Hi Everyone!! 
 
