@@ -9,14 +9,9 @@ If you cannot access the lecture recordings, just send me an email!
 # Update on Lectures
 Hi Everyone!! 
 
-The next lecture will on Wednesday 14/04 at 14. It will be the second part of the introduction to R (statistical analysis) 
-To access the lecture this is the [link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTFjOGQ0NDQtNjEwOS00NjY5LWJiM2QtNzc3MzZmNDg1NzU5%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d).
+The next lecture will on Wednesday 28/04 at 14. It will be an lecture on GSEA!
+To access the lecture this is the [link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_Y2QyNWY0NzUtZTJhNi00NTE3LWFhNjUtNWM2YmQ4YTc3Zjc0%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d).
 Hope to see many of you there!
-
-Here the [material](https://colab.research.google.com/drive/1oUEA6lefrXeU4VHUyKnX94fBF6CZ2kcI?usp=sharing) for the lecture!
-
-
-The clinic sessions are still taking place. Just book a spot using this [form](https://forms.gle/VaZb9oivXJ2bP4t47) and we will do our best to help you :) 
 
 # Update on Clinic Sessions
 
