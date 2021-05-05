@@ -9,5 +9,5 @@ In this way you don't need to install anaything to join. We hope to see many of 
 3. Use of matplotlib
 4. For loops
 5. Visualisation with PCA
-6. Visualization with t-SNA
+6. Visualization with t-SNE
 7. Classification (machine learning)
