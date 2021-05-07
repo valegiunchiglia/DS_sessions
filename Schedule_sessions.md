@@ -17,6 +17,6 @@ Date|Time| Topic | Teams Link | Recording |
 26/05 | 13.00 - 14.30  | Introduction to Linux/Command Line
 09/06 | 13.00 - 14.30  | Chip-seq analysis
 23/06 | 13.00 - 14.30  | DNA Methylation Analysis
-07/07 | 13.00 - 14.30  | Hot to make nice plots 
+07/07 | 13.00 - 14.30  | Secrets behind nice plots
 
 
