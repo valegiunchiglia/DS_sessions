@@ -9,9 +9,8 @@ If you cannot access the lecture recordings, just send me an email!
 # Update on Lectures
 Hi Everyone!! 
 
-The next lecture will be on Wednesday 05/05 at 13. It will be an lecture on Python programming (part 3)!
-To access the lecture this is the [link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVlMGEwNzItOWM1NS00ZmUwLWExMTQtN2RjZWFlMzU5Mzdl%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d).
-The material is available [here](https://colab.research.google.com/drive/1F6jes4P219cpWdEBbARd1VQrI4K7a400?usp=sharing)
+The next lecture will be at the end of May. It will be on the use of linux and the command line. 
+Keep checking the page for more information!
 
 Hope to see many of you there!
 
