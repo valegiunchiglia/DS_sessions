@@ -9,7 +9,8 @@ If you cannot access the lecture recordings, just send me an email!
 # Update on Lectures
 Hi Everyone!! 
 
-The next lecture will be at the end of May. It will be on the use of linux and the command line. 
+The next lecture will be on the 2nd of June. It will be on the use of linux and the command line. 
+This will be the first one of a set of four lectures where we will learn some more about epigenetics analysis, command-line tools and secrets on how to make nice plots. 
 Keep checking the page for more information!
 
 Hope to see many of you there!
