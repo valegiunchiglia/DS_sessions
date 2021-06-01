@@ -9,9 +9,14 @@ If you cannot access the lecture recordings, just send me an email!
 # Update on Lectures
 Hi Everyone!! 
 
-The next lecture will be on the 2nd of June. It will be on the use of linux and the command line. 
+The next lecture will be on the 2nd of June. It will be on the use of the terminal/command line and on how to use the HPC (High performance Computing Cluster). 
+
+The lecture will be accessible at this [link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDQ3ZDNjMGYtZWM3Mi00NWRiLWE1ZTMtNzVkMDFjZjI0YTFk%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d)
+
+The lecture material is accessible [here](https://github.com/valegiunchiglia/DS_sessions/tree/main/Lecture_Material/0206_Linux_and_HPC)
+
+
 This will be the first one of a set of four lectures where we will learn some more about epigenetics analysis, command-line tools and secrets on how to make nice plots. 
-Keep checking the page for more information!
 
 Hope to see many of you there!
 
