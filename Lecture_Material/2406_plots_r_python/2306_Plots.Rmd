@@ -1,0 +1,354 @@
+---
+title: "Plots and plots and plots"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(patchwork)
+
+remotes::install_github("allisonhorst/palmerpenguins")
+penguins = palmerpenguins::penguins
+
+```
+
+# The R Markdown format
+
+This is an R Markdown document. It is a file format where we can combine code (R) and formatted text (Markdown).
+Markdown is a mark-up language to produce HTML documents from a simple plain-text syntax.
+Similar to how in whatsapp you can write \***bold text**\* and \_ _italics_ \_ by using \* and \_, you can use them also in Markdown.
+For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Rmarkdowns are the R equivalent of jupyter notebooks, 
+but the cool thing is that thanks to a recent update in RStudio, we can use python code within an Rmarkdown document!
+But more of that in a minute.
+
+# Plotting basics
+
+Plots are graphical representation of data. 
+Their main goal is to communicate results in a rapid and compelling way, allowing us to quickly assess and compare data.
+Proper plotting has a bit of science and a bit of art and creativity. 
+Visually pleasing plots are nicer to see, and while they won't necessarily make the results any clearer, there is also no reason to oppose them :)
+
+# R
+
+## ggplot
+
+`ggplot` is a library for R that helps us in creating high quality graphics. 
+Have a look at [their website](https://ggplot2.tidyverse.org/) to access the user guide.
+The documentation of every function is thorough and provides very useful examples and additional resources.
+My personal tip: check the page from time to time to see if you find something new to learn.
+
+This lecture is about making nice graphics, so I'll be skipping over base R  plotting.
+Base is fine if you want a quick plot, but they are very limited in terms of aesthetic.
+
+Just to make my point:
+
+```{r, echo=FALSE}
+p1 = ggplot(data = diamonds, 
+            aes(x = carat, y = price)) + 
+  geom_point() + 
+  ggtitle("ggplot default")
+
+p1 + wrap_elements(~plot(diamonds$carat, diamonds$price, main = 'R base default'), clip=FALSE)
+par(mar=c(0,2,0,0))
+```
+
+
+## Today's dataset... diamonds 💎💎💎
+
+A brief description of the diamonds dataset can be found by running `?diamonds` in the R console. In summary:
+
+|Variable|Type|Meaning|
+|:---:|:---:|:---:|
+|carat|numeric,float|carat weight of the diamond|
+|cut|categorical,ordinal|quality of the cut|
+|color|categorical,ordinal|color of the diamond, also related to quality (D:best, J:worst)|
+|clarity|categorical,ordinal|How obvious inclusions are within the diamond:(in order from best to worst, FL = flawless, I3= level 3 inclusions) FL,IF, VVS1.|
+|depth|float|The height of a diamond, measured from the culet to the table, divided by its average girdle diameter |
+|table|float|The width of the diamond's table expressed as a percentage of its average diameter|
+|price|integer|price in $|
+|x, y, x|float|width, height, depth of the diamond, in milimeters|
+
+
+```{r}
+head(diamonds)
+```
+
+
+```{r}
+head(penguins)
+```
+
+## The grammar of graphics
+
+`ggplot` follows the design principle of the "Grammar of Graphics", which formalizes components of a visualization in a way that generalize many common concepts together.
+A common way of plotting a scatter plot in base R is using the syntax `plot(VectorX,VectorY)`, where we ask it to draw specifically that pair of datapoints.
+In `ggplot`, however, we don't give direct orders like that. Rather, we give specifications of higher-level instructions that then the `ggplot()` function interprets to produce a graphic.
+Let's go step by step.
+
+1. Every ggplot starts by calling the `ggplot()` function
+  - It is a way to tell ggplot that we are initializing a figure
+1. In the same function call, we can specify the data and some prelimiary instructions
+1. Finally, we ask ggplot to plot the data using specific geometric shapes
+
+```{r}
+# The diamonds dataset is in the ggplot2 library
+ggplot( # call the function
+  data = diamonds, # specify what dataset we will use for plotting
+  mapping = aes(x = carat, y=price) # instructions on what to use for the plot
+) + # we use the + signs to add layers of specification
+  geom_point() # among the geometric shapes that could be used, please use points/dots
+```
+
+The instructions that we give to ggplot have to be inside the `mapping` argument.
+We have to specify it by using the `aes()` —aesthethics— function. 
+In the context of ggplot, aesthetics are not just superficial details to make images pretty. 
+**Aesthetics are pieces of information that are mapped to visual elements in the plot** (the x axis locaiton, the color, etc.) and are thus a vital component of the plotting process.
+Finally, the information supplied to the `ggplot()` has to be expressed as some sort of concrete shape, the `geom_`. 
+In the case above, we specify dots with `geom_point()`
+
+> So to sum up, we produce a plot by doing the following steps:
+
+1. call ggplot()
+1. tell ggplot what data to use
+1. tell ggplot how to map columns to aesthetic elements
+1. specify the shape to use in the plot
+
+--------
+
+#### Code with me!
+
+Explore the diamonds dataset!
+Can you find any interesting relationship? Whacky distributions?
+
+Try writing in the console the word `geom_` and press Tab. See what suggestions pop up.
+Alternative, visit the [ggplot function reference](https://ggplot2.tidyverse.org/reference/) to see what options you have.
+
+```{r, eval=FALSE}
+ggplot(data = diamonds,
+       mapping = aes(x = ..., y = ...)) +
+  geom_...
+  
+```
+
+--------
+
+## Aesthetic mappings
+
+Often we want to use the values of a variable to highlight different groups in our data.
+We can do that by mapping that variable to an aesthetic that will provide that information.
+
+In the following example, we want to see the relationship between diamond's carat and its price but also controlling for the diamond's quality (Fair, Good, Premium, etc).
+In order to do that, we have to tell ggplot to use the values in the `cut` column to color the dots in our plot.
+
+
+```{r}
+ggplot(data = diamonds %>% sample_frac(.1),
+       mapping = aes(x = carat, y = price, color = cut)) +
+  geom_point()
+  
+```
+
+Overall, the main aesthetics you will usually make use of are:
+
+- color/fill 
+- shape
+- size
+- alpha (transparency)
+
+Just to give you a quick overview of some of them and their uses
+
+```{r}
+print(table(penguins$year))
+penguins
+
+```
+
+
+```{r, echo = FALSE, fig.width=7, fig.height=5}
+
+p1 = ggplot(diamonds %>% sample_frac(.1),
+            aes(x = cut, y = price, fill = cut)) + 
+  geom_violin() + 
+  geom_jitter(alpha = .1) + 
+  labs(x = "", y = "Price ($)", fill = "Cut quality",
+       title = "Mapping quality to the :fill: aesthetic")
+
+p2 = ggplot(penguins %>% sample_frac(.5), 
+            aes(bill_length_mm, bill_depth_mm, shape=island, color=island)) + 
+  geom_point() +
+  labs(x="Bill length (mm)", y="Bill depth (mm)", 
+       shape = "Island", color="Island",
+       title = "Mapping quality to the :shape: and :color: aesthetic", 
+       subtitle = "Data from the Palmer Penguins dataset")
+
+p3 = diamonds %>% sample_frac(.1) %>% 
+  group_by(cut, clarity) %>% 
+  summarise(avg_price = mean(price)) %>% 
+  ungroup() %>% 
+  ggplot(aes(cut, clarity, size=avg_price)) +
+  geom_point(shape=21, fill='white', stroke=2) +
+  labs(x = "Cut quality", y = "Clarity", size = "Average price",
+       title = "Mapping the average price of each \ncut-clarity combination to the :size: aesthetic",
+       subtitle = "Not a great aesthetic")
+
+# p4 = ggplot(diamonds %>% sample_frac(.1), aes(x, y, alpha = price)) + 
+#   geom_point() +
+#   labs(x = "Width (mm)", y = "Height (mm)", alpha = "Price ($)",
+#        title = "Mapping price to the :alpha: aesthetic")
+
+p4 = ggplot(penguins,
+            aes(bill_depth_mm, flipper_length_mm, 
+                alpha = body_mass_g)) +
+  geom_point()
+
+(p1+p2)/(p3+p4)
+
+```
+
+## Fixed aesthetic
+
+Sometimes you want just a fixed  color / shape / size without mapping it to a variable, and that's fine!
+
+```{r}
+# we can omit writing data = ... and mapping = ...
+# explicitly by writing them in the correct order
+
+ggplot(diamonds, aes(carat, price)) + 
+  geom_point(alpha = .05, color = 'navyblue')
+```
+
+## Meaningful labels
+
+- Use the `labs` function to specify better label names. Labels can be:
+  - The title, subtitle and caption
+  - x and y axis labels
+  - legend titles for mapped aesthetics (fill, color, shape, etc)
+  
+
+```{r}
+# we can omit writing data = ... and mapping = ...
+# explicitly by writing them in the correct order
+
+ggplot(diamonds, aes(carat, price)) + 
+  geom_point(alpha = .05, color = 'navyblue') + 
+  labs(title = "Relationship between diamond carat and its price in $",
+       subtitle = "The relationship seems to follow and exponential increase",
+       caption = "Data provided by the {ggplot} package",
+       x = "Weight (carat)", y = "Price ($)")
+```
+
+## Themes!
+
+`ggplot` provides some pre-set themes that we can use to change the overall look of the plot.
+Explore them by typing `theme_` and pressing Tab
+
+```{r, fig.width=6, fig.height=4}
+
+themes = c('theme_bw'=theme_bw, 'theme_classic'=theme_classic, 
+         'theme_void'=theme_void, 'theme_minimal'=theme_minimal)
+lapply(names(themes), function(theme){
+         
+ggplot(diamonds, aes(carat, price)) + 
+  geom_point(alpha = .05) + 
+  labs(title = "Relationship between diamond carat and its price in $",
+       subtitle = theme,
+       x = "Weight (carat)", y = "Price ($)") + 
+  themes[[theme]]()
+       }) %>% wrap_plots(ncol=2)
+
+```
+
+
+## Combining plots together
+
+- `patchwork` makes our life easy
+- put plots side-by-side with `+`
+- put plots on top of each other with `/`
+
+```{r}
+
+```
+
+
+## Facetting
+
+Use facets to divide your plots into subplots according to data in a column
+
+```{r}
+ggplot(penguins, 
+       aes(bill_length_mm, bill_depth_mm, color=sex)) +
+  geom_point() + 
+  facet_wrap(~island)
+```
+
+
+## Tidy data 
+
+```{r}
+df = lapply(setNames(nm=LETTERS[1:10]), function(x) rnorm(150)) %>% bind_cols
+df %>% 
+  pivot_longer(everything(), names_to="var", values_to = "vals") %>% 
+  ggplot(aes(x = vals, fill=var)) + 
+  #geom_density() + 
+  geom_histogram() + 
+  facet_wrap(~var)
+```
+
+
+# Python
+
+## Seaborn
+
+My personal recommendation is to use the [seaborn library](https://seaborn.pydata.org/). 
+It follows a similar philosophy to that of `ggplot`, although the language is different.
+
+### Figure vs Axes lvl plots
+
+Seaborn has 2 hierarchies of plots: Figure-level and Axes-level
+
+Figure level plots have more generic names, are self-contained objects and should, in principle, be enough to call with just one function.
+
+```{python}
+import pandas as pd, numpy as np
+import seaborn as sb, matplotlib.pyplot as plt
+sb.set_theme()
+
+penguins = r.penguins
+f = sb.relplot(data = penguins, 
+           x = "bill_length_mm",
+           y = "bill_depth_mm", 
+           hue = "sex",
+           col = "island")
+
+f.set_axis_labels("Flipper length (mm)", "Bill length (mm)") # x, y
+
+plt.show()
+```
+
+
+```{r}
+penguins
+```
+
+
+### Subplots and colorbars
+
+```{python}
+some_img = np.random.rand(100,100)
+
+f, axarr = plt.subplots(2,3,figsize=(16,12));
+f.suptitle('Something')
+ 
+img_plot = axarr[0,1].imshow(some_img, cmap='viridis')
+img_plot.set_clim([0,1])
+axarr[0,1].axis('off')
+axarr[0,1].set_title('Grad-CAM')
+f.colorbar(img_plot, ax=axarr[0,1], fraction=0.046, pad=0.05, ticks=np.arange(0,1.1,0.1)) 
+
+axarr[0,2].axis('off')
+
+plt.show()
+```
