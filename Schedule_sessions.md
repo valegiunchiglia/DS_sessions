@@ -15,8 +15,7 @@ Date|Time| Topic | Teams Link | Recording |
 28/04 | 14.00 - 16.00 | GSEA | [Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_Y2QyNWY0NzUtZTJhNi00NTE3LWFhNjUtNWM2YmQ4YTc3Zjc0%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d) | [Lecture 8](https://imperiallondon-my.sharepoint.com/:v:/g/personal/vg816_ic_ac_uk/EdeMELpeMBJEnHfURIxm70kBMSZn3A8pJRlQ6LVlnM8hhQ)
 05/05 | 13.00 - 14.30 | Introduction to Python 3.0| [Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVlMGEwNzItOWM1NS00ZmUwLWExMTQtN2RjZWFlMzU5Mzdl%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d)
 02/06 | 13.30 - 15.00  | Introduction to Linux/Command Line | [Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDQ3ZDNjMGYtZWM3Mi00NWRiLWE1ZTMtNzVkMDFjZjI0YTFk%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d)
-09/06 | 13.00 - 14.30  | Chip-seq analysis
-23/06 | 13.00 - 14.30  | DNA Methylation Analysis
-07/07 | 13.00 - 14.30  | Secrets behind nice plots
+24/06 | 13.00 - 14.30  | Secrets behind nice plots | [Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDEwZjE0YzMtMmZkZC00OWY2LWEzMDAtMzE4M2RlNDFiNGVh%40thread.v2/0?context=%7b%22Tid%22%3a%222b897507-ee8c-4575-830b-4f8267c3d307%22%2c%22Oid%22%3a%2259f6bab9-038b-4d99-ba0a-7617d7a16f65%22%7d)
+
 
 
